@@ -1,10 +1,10 @@
 # Explorer
 
 - [x] Home Page :: Kushal
-- [] Resources
+- [] Resources (upload functionality)
 - [] Clubs & Societies
 - [] Wall of Fame
-- [] Examination Reminder(big feature)
+- [] Examination Reminder (big feature)
 
 
 
