@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  outline:none;
+}
+
+/* color scheme */
+:root {
+  --primary: #ffac41;
+  --secondary: #ff1e56;
+  --tertiary: #323232;
+  --text-color: #fff;
+}
+
+/* overall adjustments */
+html {
+    scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden; 
+}
+
+.container-fluid {
+    padding: 3% 10%;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.5 rem;
+    font-weight: normal;
+}
+
+/* hero section */
+#hero-section {
+    background-color: var(--primary);
+    color: var(--text-color);
+    height: auto;
+}
+
+#hero-section h1 {
+    font-size: 5rem;
+    line-height: 1.25;
+    font-weight: normal;
+    padding-bottom: 3%;
+}
+
+#hero-section p {
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+}
+
+.hero-image {
+  background-color: var(--primary);
+}
+
+.call-to-action {
+    background-color: var(--text-color);
+    color: var(--tertiary);
+    border: 2px solid var(--text-color);
+    padding: 1% 4%;
+    margin-bottom: 6%;
+}
+
+.call-to-action:hover {
+  padding: 1.5% 5%;
+  outline: none;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* For Mobile Screens */
+@media only screen and (max-width: 380px) {
+  #hero-section h1 {
+    font-size: 2.75em;
+    font-weight: 800;
+  }
+  #hero-section p {
+    width: 90%;
+  }
+}
+
+/* story section */
+#story {
+    background-color: var(--secondary);
+}
+
+#story h1 {
+    color: var(--text-color);
+    margin-bottom: 7%;
+}
+
+#story p {
+    color: var(--text-color);
+}
+
+.story-image {
+    margin-bottom: 5%;
+}
+
+/* ideas section */
+#ideas {
+    background-color: var(--primary);
+}
+
+#ideas h1 {
+    color: var(--text-color);
+    margin-bottom: 7%;
+}
+
+#ideas p {
+    color: var(--text-color);
+}
+
+.ideas-image {
+    margin-top: 5%;
+}
+
+/* socials section */
+#socials {
+    background-color: var(--tertiary);
+    text-align: center;
+}
+
+.white-icons {
+  color: var(--text-color);
+}
+
+.white-icons:hover {
+  color: var(--secondary);
+}
+
+/* credit section */
+#credit {
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--tertiary);
+}
+
+#credit a {
+  color: var(--primary);
+}
+
+#credit a:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
