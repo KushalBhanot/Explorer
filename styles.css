@@ -22,6 +22,7 @@ html {
 }
 body {
   overflow-x: hidden; 
+  /* background: var(--primary); */
 }
 
 .container-fluid {
@@ -30,8 +31,13 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    padding: 0 0 4.5rem;
-}
+    /* padding: 0 0 4.5rem;  */
+    padding-left: 1rem;
+    padding-right : 1rem;
+    
+    background : var(--primary);
+    /* opacity: 0.8; */
+  }
 
 .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
