@@ -53,13 +53,17 @@ nav {
 
 /* hero section */
 #hero-section {
-    background-color: var(--primary);
-    color: var(--text-color);
-    height: auto;
+    background-image: url('assets/images/Untitled\ design\ \(4\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
     /* padding-top: 10%; */
 }
 
 #hero-section h1 {
+    color: var(--text-color);
+    margin-top: 16%;
     font-size: 5rem;
     line-height: 1.25;
     font-weight: normal;
@@ -67,13 +71,14 @@ nav {
 }
 
 #hero-section p {
+    color: var(--tertiary);
     font-size: 1.5rem;
     padding-bottom: 50px;
 }
 
-.hero-image {
-  background-color: var(--primary);
-}
+/* .hero-image {
+  background-color: transparent;
+} */
 
 .call-to-action {
     background-color: var(--text-color);
@@ -164,6 +169,11 @@ nav {
 #credit a:hover {
   color: var(--text-color);
   text-decoration: none;
+}
+
+/* resources */
+#resources {
+    height: 90vh;
 }
 
 /* clubs & societies */
