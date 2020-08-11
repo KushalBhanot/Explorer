@@ -9,6 +9,8 @@
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
 
     <!-- Font awesome -->
@@ -58,14 +60,14 @@
     </nav>
 
     <section id="hero-section">
-        <div class="container-fluid">
+        <div class="container-fluid" data-aos="slide-up" data-aos-duration="600">
             <!-- Navbar -->
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Explorer</h1>
                     <p>Confused? Find your answers here :)</p>
-                    <button type="button" class="btn btn-dark btn-lg call-to-action"><i class=""></i>
-                        Learn more</button>
+                    <a href="#story"><button type="button" class="btn btn-dark btn-lg call-to-action">
+                            Learn more</button></a>
                 </div>
                 <!-- <div class="col-lg-6">
                     <img class="hero-image" src="assets/images/undraw_searching_p5ux.svg" width="100%" height="80%"
@@ -76,7 +78,7 @@
     </section>
 
     <section id="story">
-        <div class="container-fluid">
+        <div class="container-fluid" data-aos="slide-left" data-aos-duration="800">
             <div class="row">
                 <div class="col-lg-6">
                     <img class="story-image" src="assets/images/undraw_instant_support_elxh (1).svg" width="100%"
@@ -106,7 +108,7 @@
     </section>
 
     <section id="ideas">
-        <div class="container-fluid">
+        <div class="container-fluid" data-aos="slide-right" data-aos-duration="800">
             <div class="row">
                 <div class="col-lg-6">
                     <h1>Want to bring your ideas to life?</h1>
@@ -134,9 +136,12 @@
 
     <section id="socials">
         <div class="container-fluid">
-            <i class="fab fa-github fa-3x white-icons"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fab fa-linkedin-in fa-3x white-icons"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fab fa-instagram fa-3x white-icons"></i>
+            <a target="_blank" href="https://github.com/KushalBhanot"><i
+                    class="fab fa-github fa-3x white-icons"></i>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a target="_blank" href="https://www.linkedin.com/in/kushalbhanot/"><i
+                    class="fab fa-linkedin-in fa-3x white-icons"></i>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a target="_blank" href="https://instagram.com/kushal.bhanot/"><i
+                    class="fab fa-instagram fa-3x white-icons"></i></a>
         </div>
         </div>
     </section>
@@ -150,6 +155,8 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
