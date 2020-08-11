@@ -263,7 +263,7 @@ nav {
 .card {
   border-radius: 8px;
   box-shadow: 5px 5px 15px var(--tertiary);
-  transition : all 0.3s ease-in;
+  transition : all 0.3s ease-in !important;
   background: var(--tertiary);
   color : var(--text-color);
 
