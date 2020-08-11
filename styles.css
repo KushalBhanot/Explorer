@@ -13,6 +13,7 @@
   --primary: #ffac41;
   --secondary: #ff1e56;
   --tertiary: #323232;
+  --accent: #4194ff;
   --text-color: #fff;
 }
 
@@ -24,23 +25,27 @@ body {
   overflow-x: hidden;
   /* background: var(--primary); */
 }
-/* Scroll Bar */
-::-webkit-scrollbar {
-  width : 15px;
-}
-
-::-webkit-scrollbar-track {
-  background : var(--primary);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--secondary);
- 
-}
-
 
 .container-fluid {
     padding: 3% 10%;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width : 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: white
+}
+
+::-webkit-scrollbar-thumb {
+  background: #75D5FD;
+  border-radius: 1%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B76CFD;
 }
 
 /* Navigation Bar */
@@ -94,20 +99,25 @@ nav {
   background-color: transparent;
 } */
 
-.call-to-action {
+.call-to-action, .call-to-action:visited {
     background-color: var(--text-color);
     color: var(--tertiary);
     border: 2px solid var(--text-color);
     padding: 1% 4%;
     margin-bottom: 6%;
+    border-radius: 0.4em;
+}
+
+.call-to-action:focus, .call-to-action:hover {
+  padding: 1.2% 4.5%;
+  outline: none;
 }
 
 .call-to-action:hover {
-  padding: 1.5% 5%;
-  outline: none;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
-/* Mobile Screens */
+
+/* For Mobile Screens */
 @media only screen and (max-width: 380px) {
   #hero-section h1 {
     font-size: 2.75em;
@@ -197,11 +207,9 @@ nav {
 }
 
 /* Wall of Fame */
-
 .clip {
-  background: var(--primary);
+  background: linear-gradient(180deg, var(--accent),var(--secondary));
   position: sticky;
-  
   margin-left: auto;
   margin-right: auto;
   clip-path:polygon(0 0,100% 0,100% 60%,50% 100%,0 60%);
@@ -221,15 +229,16 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height : auto;
-  padding-bottom: 20%;
+  padding-bottom: 5%;
   text-align: center;
 }
+
 #wof h1 {
-  color : #1f2833;
+  color : #1A1A1A;
   padding-top: 2%;
-  text-shadow: 3px 3px #66fcf1;
+  text-shadow: 3px 3px var(--primary);
   font-size : 80px;
-  font-weight: 900;
+  font-weight: 700;
   padding-bottom: 10%;
 }
 
@@ -237,7 +246,7 @@ nav {
   background-image: url('https://images.pexels.com/photos/4114634/pexels-photo-4114634.jpeg?auto=compress&cs=tinysrgb&h=350');
   background-repeat: no-repeat;
   background-size : cover;
-  
+
 }
 
 #wofTxt {
@@ -257,18 +266,16 @@ nav {
   transition : all 0.3s ease-in;
   background: var(--tertiary);
   color : var(--text-color);
-  
+
 }
 .card:hover {
   background : var(--primary);
   box-shadow : 5px 5px 10px var(--tertiary);
-  
+
 } 
 .card:hover h3,.card:hover i {
   color : var(--text-color);
 } 
-
-
 
 .card h1 {
   font-size : 36px !important;
@@ -306,7 +313,6 @@ nav {
   font-size: 500;
 }
 
-/* Wall of Fame Responsive */
 @media only screen and (max-width : 1010px) {
   .clip {
     width : 70%;
@@ -328,4 +334,3 @@ nav {
     padding : 10px;
   }
 }
-
