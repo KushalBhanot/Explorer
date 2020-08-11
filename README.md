@@ -8,7 +8,7 @@
 - [] Animated Button (for better UX)
 - [x] Customized Scroll Bar :: Divyansh
 - [] Loading Animation 
-- [] Some use of typer.js
+- [x] Some use of typer.js :: Kushal
 - [x] Loadup Animations for different sections and its elements :: Kushal
 
 
