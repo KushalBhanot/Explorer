@@ -6,10 +6,10 @@
 - [x] Wall of Fame :: Divyansh
 - [] Examination Reminder (big feature)
 - [] Animated Button (for better UX)
-- [] Customized Scroll Bar
-- [] Loading Animation
+- [x] Customized Scroll Bar :: Divyansh
+- [] Loading Animation 
 - [] Some use of typer.js
-- [] Loading Animation for different sections and its elements
+- [x] Loadup Animations for different sections and its elements :: Kushal
 
 
 Future Scope -> Make an app for the same.
