@@ -24,6 +24,20 @@ body {
   overflow-x: hidden;
   /* background: var(--primary); */
 }
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width : 15px;
+}
+
+::-webkit-scrollbar-track {
+  background : var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+ 
+}
+
 
 .container-fluid {
     padding: 3% 10%;
@@ -93,8 +107,7 @@ nav {
   outline: none;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* For Mobile Screens */
+/* Mobile Screens */
 @media only screen and (max-width: 380px) {
   #hero-section h1 {
     font-size: 2.75em;
@@ -180,3 +193,137 @@ nav {
 #mind-map {
   background-color: var(--secondary);
 }
+
+/* Wall of Fame */
+
+.clip {
+  background: var(--primary);
+  position: sticky;
+  
+  margin-left: auto;
+  margin-right: auto;
+  clip-path:polygon(0 0,100% 0,100% 60%,50% 100%,0 60%);
+  margin-bottom: 5%;
+} 
+
+#card {
+  max-width : 700px;
+  max-height : 500px;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+#wof {
+  background-image: url('assets/images/wof-3.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height : auto;
+  padding-bottom: 20%;
+  text-align: center;
+}
+#wof h1 {
+  color : #1f2833;
+  padding-top: 2%;
+  text-shadow: 3px 3px #66fcf1;
+  font-size : 80px;
+  font-weight: 900;
+  padding-bottom: 10%;
+}
+
+#wofImg {
+  background-image: url('https://images.pexels.com/photos/4114634/pexels-photo-4114634.jpeg?auto=compress&cs=tinysrgb&h=350');
+  background-repeat: no-repeat;
+  background-size : cover;
+  
+}
+
+#wofTxt {
+  background:var(--primary) ;
+  transition: 0.5s linear;
+  padding : 10px;
+}
+
+#wofTxt:hover {
+  background: var(--tertiary);
+  color : var(--text-color);
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px var(--tertiary);
+  transition : all 0.3s ease-in;
+  background: var(--tertiary);
+  color : var(--text-color);
+  
+}
+.card:hover {
+  background : var(--primary);
+  box-shadow : 5px 5px 10px var(--tertiary);
+  
+} 
+.card:hover h3,.card:hover i {
+  color : var(--text-color);
+} 
+
+
+
+.card h1 {
+  font-size : 36px !important;
+  color : var(--secondary) !important;
+  text-shadow: 2px 2px var(--primary) !important;
+  font-weight : bold !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+}
+.card h3 {
+  font-size : 24px;
+  font-weight : bold;
+  color : var(--primary);
+  text-shadow: 2px 2px var(--secondary);
+}
+.card:hover h1{
+  text-shadow: 3px 3px var(--tertiary) !important;
+} 
+.card:hover h3 {
+  color : var(--tertiary);
+}
+.card img {
+  margin-top: -50px;
+}
+.card i {
+  font-size : 26px;
+  transition : all 0.3s ease-in;
+  color : var(--secondary);
+}
+.card i:hover{
+  color : var(--tertiary);
+}
+.card p {
+  font-size: 500;
+}
+
+/* Wall of Fame Responsive */
+@media only screen and (max-width : 1010px) {
+  .clip {
+    width : 70%;
+  }
+}
+@media only screen and (max-width : 582px) {
+  #wof h1 {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width : 582px) {
+  .clip {
+    padding-bottom : 20px;
+  }
+}
+@media only screen and (max-width : 372px) {
+  #wof h1 {
+    font-size: 40px;
+    padding : 10px;
+  }
+}
+
