@@ -192,6 +192,8 @@ nav {
 /* clubs & societies */
 #mind-map {
   background-color: var(--secondary);
+  height: 90vh;
+  text-align: center;
 }
 
 /* Wall of Fame */
