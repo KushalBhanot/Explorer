@@ -50,7 +50,7 @@ body {
 
 /* Navigation Bar */
 nav {
-   background: var(--tertiary);
+   background: rgba(2, 10, 216, 0.5);
 }
 
 .navbar {
@@ -63,11 +63,17 @@ nav {
     font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
     font-weight: bold;
+    color: var(--text-color);
 }
 
 .nav-link {
     font-size: 1.5 rem;
     font-weight: normal;
+    color: var(--text-color);
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--secondary);
 }
 
 /* hero section */
@@ -80,6 +86,12 @@ nav {
     /* padding-top: 10%; */
 }
 
+/* Making the hero background responsive */
+@media only screen and (max-width: 720px) {
+  #hero-section {
+    background-image: linear-gradient(180deg, var(--primary), var(--primary), var(--secondary));
+  }
+}
 #hero-section h1 {
     color: var(--text-color);
     margin-top: 16%;
@@ -263,7 +275,7 @@ nav {
 .card {
   border-radius: 8px;
   box-shadow: 5px 5px 15px var(--tertiary);
-  transition : all 0.3s ease-in !important;
+  transition : all 0.3s ease-in;
   background: var(--tertiary);
   color : var(--text-color);
 
