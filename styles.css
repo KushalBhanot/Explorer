@@ -100,7 +100,7 @@ nav {
 } */
 
 .call-to-action, .call-to-action:visited {
-    background-color: var(--text-color);
+    background-color: transparent;
     color: var(--tertiary);
     border: 2px solid var(--text-color);
     padding: 1% 4%;
