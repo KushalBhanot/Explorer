@@ -4,12 +4,18 @@
 - [x] Resources :: Kushal
 - [x] Clubs & Societies :: Kushal (UI and Map) :: Divyansh (Functionality)
 - [x] Wall of Fame :: Divyansh
-- [] Examination Reminder (big feature)
-- [] Animated Button (for better UX)
 - [x] Customized Scroll Bar :: Divyansh
-- [] Loading Animation 
 - [x] Some use of typer.js :: Kushal
 - [x] Loadup Animations for different sections and its elements :: Kushal
 
+- [] Examination Reminder (big feature)
+- [] Animated Button (for better UX)
+- [] Loading Animation 
+
+### Issues to be fixed
+
+- [] The CTA navigates above the div
+- [] Hamburger isn't going with the color scheme 
+- [] Fix the mobile view for ideas section
 
 Future Scope -> Make an app for the same.
