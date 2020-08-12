@@ -81,8 +81,9 @@ nav {
     background-image: url('assets/images/Untitled\ design\ \(4\).png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
+    margin-top: -74px;
     /* padding-top: 10%; */
 }
 
@@ -214,8 +215,10 @@ nav {
 /* clubs & societies */
 #mind-map {
   background-color: var(--secondary);
-  height: 90vh;
+  height: 100vh;
   text-align: center;
+  margin-top: -74px;
+  padding-top: 5%;
 }
 
 /* Wall of Fame */
@@ -241,8 +244,10 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height : auto;
+  padding-top: 74px;
   padding-bottom: 5%;
   text-align: center;
+  margin-top: -74px;
 }
 
 #wof h1 {
