@@ -90,7 +90,11 @@ nav {
 /* Making the hero background responsive */
 @media only screen and (max-width: 720px) {
   #hero-section {
-    background-image: linear-gradient(180deg, var(--primary), var(--primary), var(--secondary));
+    background-image: url('assets/images/hero\ background\ for\ mobile\ \(1\).png');
+  }
+
+  #hero-section h1 {
+    padding-top: 160px;
   }
 }
 #hero-section h1 {
