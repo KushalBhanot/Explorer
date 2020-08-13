@@ -18,5 +18,7 @@
 - [] The CTA navigates above the div
 - [] Hamburger isn't going with the color scheme 
 - [] Fix the mobile view for ideas section
+- [] Z-index
+- [] onClick() through JS
 
 Future Scope -> Make an app for the same.
