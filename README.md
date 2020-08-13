@@ -14,6 +14,7 @@
 
 ### Issues to be fixed
 
+- [] Change the UI/UX of the story and ideas section
 - [] The CTA navigates above the div
 - [] Hamburger isn't going with the color scheme 
 - [] Fix the mobile view for ideas section
