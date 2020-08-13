@@ -21,4 +21,8 @@
 - [] Z-index
 - [] onClick() through JS
 
-Future Scope -> Make an app for the same.
+Future Scope -> 
+- Make an app for the same.
+- Make a game for directions of Chitkara University.
+- Open Source section for others to showcase their projects.
+- Weekly Email regarding oppurtunities .
