@@ -11,6 +11,7 @@
 - [] Examination Reminder (big feature)
 - [] Animated Button (for better UX)
 - [] Loading Animation 
+- [] Centralised event notifications according to Tech Field
 
 ### Issues to be fixed
 
