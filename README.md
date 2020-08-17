@@ -22,6 +22,7 @@
 - [] Fix the mobile view for ideas section
 - [] Z-index
 - [] onClick() through JS
+- [] Clubs & Societies and Wall of Fame have the same background color
 
 Future Scope -> 
 - Make an app for the same.
