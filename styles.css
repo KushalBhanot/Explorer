@@ -446,13 +446,12 @@ nav {
 }
 
 /* Contact */
-/* Contact */
 .contact {
   display : flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: var(--secondary);
+  background: var(--primary-variant);
 }
 .Box {
   position : relative;
@@ -484,7 +483,7 @@ nav {
 }
 
 .fBox form h2 {
-  color : var(--text-color);
+  color : var(--text);
   font-weight: 600;
   font-size : 2em;
   text-transform: uppercase;
@@ -503,7 +502,7 @@ nav {
   position: relative;
   background: transparent;
   width : 80%;
-  color : var(--text-color);
+  color : var(--text);
   border: none;
   outline: none;
   padding-bottom: 10px;
@@ -517,15 +516,15 @@ nav {
   height : 100px;
 }
 .fBox form .iBox input[type="submit"] {
-  background : var(--text-color);
+  background : var(--text);
   padding : 8px 20px;
   margin-top: -10px;
   width : 120px;
   cursor: pointer;
-  border: 1px solid var(--secondary);
-  border-bottom-color: var(--secondary) !important;
+  border: 1px solid var(--primary-variant);
+  border-bottom-color: var(--primary-variant) !important;
   border-radius: 12px;
-  color : var(--secondary);
+  color : var(--primary-variant);
   font-size : 20px;
   font-weight: 500;
   text-transform: uppercase;
@@ -533,9 +532,9 @@ nav {
   transition: 0.3s ease-in;
 }
 .fBox form .iBox input[type="submit"]:hover {
-  background: var(--secondary);
-  color : var(--text-color);
-  border-bottom-color: var(--secondary) !important;
+  background: var(--primary-variant);
+  color : var(--text);
+  border-bottom-color: var(--primary-variant) !important;
 }
 .fBox form .iBox span {
   position : absolute;
@@ -552,7 +551,7 @@ nav {
 .fBox form .iBox input:valid ~ span, 
 .fBox form .iBox textarea:valid ~ span{
   transform : translateY(-24px);
-  color : var(--secondary);
+  color : var(--primary-variant);
   font-size: 14px;
 }
 .fBox form .iBox input:focus, 
@@ -563,7 +562,7 @@ nav {
 }
 .fBox form .iBox input[type="submit"]:focus,
 .fBox form .iBox input[type="submit"]:hover {
-  border-bottom-color: var(--secondary);
+  border-bottom-color: var(--primary-variant);
 }
 .imgBx {
  flex : 0.5;
