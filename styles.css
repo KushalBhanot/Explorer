@@ -1,20 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap");
+@import url("https://use.typekit.net/ojv4ekx.css");
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "europa",sans-serif;
   box-sizing: border-box;
   outline:none;
 }
 
 /* color scheme */
 :root {
-  --primary: #ffac41;
-  --secondary: #ff1e56;
-  --tertiary: #323232;
-  --accent: #4194ff;
-  --text-color: #fff;
+    --primary: #ffac41;
+    --primary-variant: #ff1e56;
+    --tertiary: #323232;
+    --text: #fff;
+    --text-variant: #000;
+    --highlight: #4194ff;
 }
 
 /* overall adjustments */
@@ -36,7 +37,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: white
+  background: var(--text);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -50,7 +51,9 @@ body {
 
 /* Navigation Bar */
 nav {
-   background: rgba(2, 10, 216, 0.5);
+   background: var(--text-variant);
+   color: var(--text);
+   z-index: 1;
 }
 
 .navbar {
@@ -60,20 +63,27 @@ nav {
   }
 
 .navbar-brand {
-    font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
-    font-weight: bold;
-    color: var(--text-color);
+    font-weight: bolder;
+    color: var(--text);
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid var(--highlight);
 }
 
 .nav-link {
     font-size: 1.5 rem;
     font-weight: normal;
-    color: var(--text-color);
+    color: var(--text);
 }
 
-.navbar-brand:hover, .nav-link:hover {
-    color: var(--secondary);
+.navbar-toggler i {
+    color: var(--text);
+}
+
+.navbar-brand:hover, .nav-link:hover, .navbar-toggler i:hover {
+    color: var(--primary-variant);
 }
 
 /* hero section */
@@ -98,7 +108,7 @@ nav {
   }
 }
 #hero-section h1 {
-    color: var(--text-color);
+    color: var(--text);
     margin-top: 16%;
     font-size: 5rem;
     line-height: 1.25;
@@ -107,7 +117,7 @@ nav {
 }
 
 #hero-section p {
-    color: var(--tertiary);
+    color: var(--text-variant);
     font-size: 1.5rem;
     padding-bottom: 50px;
 }
@@ -118,8 +128,8 @@ nav {
 
 .call-to-action, .call-to-action:visited {
     background-color: transparent;
-    color: var(--tertiary);
-    border: 2px solid var(--text-color);
+    color: var(--text-variant);
+    border: 2px solid var(--text);
     padding: 1% 4%;
     margin-bottom: 6%;
     border-radius: 0.4em;
@@ -183,23 +193,23 @@ nav {
 
 /* socials section */
 #socials {
-    background-color: var(--tertiary);
+    background-color: var(--text-variant);
     text-align: center;
 }
 
 .white-icons {
-  color: var(--text-color);
+  color: var(--text);
 }
 
 .white-icons:hover {
-  color: var(--secondary);
+  color: var(--primary-variant);
 }
 
 /* credit section */
 #credit {
     text-align: center;
-    color: var(--text-color);
-    background-color: var(--tertiary);
+    color: var(--text);
+    background-color: var(--text-variant);
 }
 
 #credit a {
@@ -213,12 +223,29 @@ nav {
 
 /* resources */
 #resources {
-    height: 90vh;
+  height: 90vh;
+  background-color: rgba(65, 148, 255, 0.4);
+}
+
+#resources h3 {
+  letter-spacing: 2px;
+}
+
+#resources ul {
+  padding-left: 30px;
+}
+
+#resources a {
+  color: var(--text-variant);
+}
+
+#resources a:hover {
+  color: var(--text);
 }
 
 /* clubs & societies */
 #mind-map {
-  background-color: var(--secondary);
+  background-color: var(--primary-variant);
   height: 100vh;
   text-align: center;
   margin-top: -74px;
@@ -318,7 +345,7 @@ nav {
 
 #wof h1 {
   color : transparent;
-   -webkit-text-stroke: 2px var(--text-color);
+   -webkit-text-stroke: 2px var(--text);
   padding-top: 2%;
   font-size : 100px;
   font-weight: 900;
@@ -339,8 +366,8 @@ nav {
 }
 
 #wofTxt:hover {
-  background: var(--tertiary);
-  color : var(--text-color);
+  background:var(--tertiary);
+  color : var(--text);
 }
 
 .card {
@@ -348,7 +375,7 @@ nav {
   box-shadow: 5px 5px 15px var(--tertiary);
   transition : all 0.3s ease-in;
   background: var(--tertiary);
-  color : var(--text-color);
+  color : var(--text);
 
 }
 .card:hover {
@@ -357,12 +384,12 @@ nav {
 
 } 
 .card:hover h3,.card:hover i {
-  color : var(--text-color);
+  color : var(--text);
 } 
 
 .card h1 {
   font-size : 36px !important;
-  color : var(--secondary) !important;
+  color : var(--primary-variant) !important;
   text-shadow: 2px 2px var(--primary) !important;
   font-weight : bold !important;
   padding-top: 0 !important;
@@ -373,7 +400,7 @@ nav {
   font-size : 24px;
   font-weight : bold;
   color : var(--primary);
-  text-shadow: 2px 2px var(--secondary);
+  text-shadow: 2px 2px var(--primary-variant);
 }
 .card:hover h1{
   text-shadow: 3px 3px var(--tertiary) !important;
@@ -387,7 +414,7 @@ nav {
 .card i {
   font-size : 26px;
   transition : all 0.3s ease-in;
-  color : var(--secondary);
+  color : var(--primary-variant);
 }
 .card i:hover{
   color : var(--tertiary);
@@ -416,4 +443,11 @@ nav {
     font-size: 40px;
     padding : 10px;
   }
+}
+
+/*  under development */
+#under-dev {
+    text-align: center;
+    padding-top: 30vh;
+    height: 90vh;
 }
