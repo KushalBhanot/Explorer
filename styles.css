@@ -502,7 +502,7 @@ nav {
 .fBox form .iBox textarea{
   position: relative;
   background: transparent;
-  width : 100%;
+  width : 80%;
   color : var(--text-color);
   border: none;
   outline: none;
