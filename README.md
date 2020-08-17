@@ -12,6 +12,7 @@
 - [] Animated Button (for better UX)
 - [] Loading Animation 
 - [] Centralised event notifications according to Tech Field
+- [] Add a button in ideas section to revert to repo's issues
 
 ### Issues to be fixed
 
