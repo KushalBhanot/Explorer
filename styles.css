@@ -445,6 +445,135 @@ nav {
   }
 }
 
+/* Contact */
+/* Contact */
+.contact {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--secondary);
+}
+.Box {
+  position : relative;
+  display: flex;
+  box-shadow : 5px 5px 15px var(--tertiary);
+  border-radius : 12px;
+  width : 100%;
+  max-width:1100px;
+  margin : 20px;
+  height : 600px;
+  background : var(--tertiary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fBox { 
+  flex : 0.5;
+  /* width : 50%; */
+  display: flex;
+  justify-content: center;
+  background : var(--tertiary);
+  align-items : center;
+}
+.fBox form {
+  position: relative;
+  width : 100%;
+  padding : 0 0 0 75px;
+}
+
+.fBox form h2 {
+  color : var(--text-color);
+  font-weight: 600;
+  font-size : 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+.fBox form .iBox {
+  position : relative;
+  margin-bottom: 40px;
+}
+.fBox form .iBox:last-child {
+  margin-bottom: 0;
+}
+.fBox form .iBox input, 
+.fBox form .iBox textarea{
+  position: relative;
+  background: transparent;
+  width : 100%;
+  color : var(--text-color);
+  border: none;
+  outline: none;
+  padding-bottom: 10px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  resize: none;
+}
+.fBox form .iBox textarea {
+  height : 100px;
+}
+.fBox form .iBox input[type="submit"] {
+  background : var(--text-color);
+  padding : 8px 20px;
+  margin-top: -10px;
+  width : 120px;
+  cursor: pointer;
+  border: 1px solid var(--secondary);
+  border-bottom-color: var(--secondary) !important;
+  border-radius: 12px;
+  color : var(--secondary);
+  font-size : 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: 0.3s ease-in;
+}
+.fBox form .iBox input[type="submit"]:hover {
+  background: var(--secondary);
+  color : var(--text-color);
+  border-bottom-color: var(--secondary) !important;
+}
+.fBox form .iBox span {
+  position : absolute;
+  color : rgba(255,255,255,0.5);
+  left : 0;
+  font-weight: 300;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+.fBox form .iBox input:focus ~ span, 
+.fBox form .iBox textarea:focus ~ span,
+.fBox form .iBox input:valid ~ span, 
+.fBox form .iBox textarea:valid ~ span{
+  transform : translateY(-24px);
+  color : var(--secondary);
+  font-size: 14px;
+}
+.fBox form .iBox input:focus, 
+.fBox form .iBox textarea:focus,
+.fBox form .iBox input:valid, 
+.fBox form .iBox textarea:valid {
+  border-bottom-color: var(--text-color) ;
+}
+.fBox form .iBox input[type="submit"]:focus,
+.fBox form .iBox input[type="submit"]:hover {
+  border-bottom-color: var(--secondary);
+}
+.imgBx {
+ flex : 0.5;
+  background-image: url('/assets/images/undraw_Group_chat_unwm.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 120px;
+  height : 100%;
+}
+
 /*  under development */
 #under-dev {
     text-align: center;
