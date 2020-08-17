@@ -2,9 +2,9 @@
 
 - [x] Home Page :: Kushal
 - [x] Resources :: Kushal
-- [x] Clubs & Societies :: Kushal (UI and Map) :: Divyansh (Functionality)
+- [x] Clubs & Societies :: Kushal
 - [x] Wall of Fame :: Divyansh
-- [x] Customized Scroll Bar :: Divyansh
+- [x] Customized Scroll Bar :: Kushal
 - [x] Some use of typer.js :: Kushal
 - [x] Loadup Animations for different sections and its elements :: Kushal
 
