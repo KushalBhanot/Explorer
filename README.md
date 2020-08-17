@@ -1,12 +1,12 @@
 # Explorer
 
-- [x] Home Page :: Kushal
-- [x] Resources :: Kushal
-- [x] Clubs & Societies :: Kushal
-- [x] Wall of Fame :: Divyansh
-- [x] Customized Scroll Bar :: Kushal
-- [x] Some use of typer.js :: Kushal
-- [x] Loadup Animations for different sections and its elements :: Kushal
+- [x] Home Page
+- [x] Resources
+- [x] Clubs & Societies 
+- [x] Wall of Fame
+- [x] Customized Scroll Bar
+- [x] Some use of typer.js
+- [x] Loadup Animations for different sections and its elements
 
 - [] Examination Reminder (big feature)
 - [] Animated Button (for better UX)
