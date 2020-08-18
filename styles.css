@@ -157,16 +157,18 @@ nav {
 
 /* story section */
 #story {
-    background-color: var(--secondary);
+    background-color: var(--primary-variant);
 }
 
 #story h1 {
-    color: var(--text-color);
+    color: var(--text);
     margin-bottom: 7%;
 }
 
 #story p {
-    color: var(--text-color);
+    font-size: 1.2rem;
+    color: var(--text);
+    line-height: 2rem;
 }
 
 .story-image {
@@ -179,12 +181,28 @@ nav {
 }
 
 #ideas h1 {
-    color: var(--text-color);
+    color: var(--text);
     margin-bottom: 7%;
 }
 
 #ideas p {
-    color: var(--text-color);
+    font-size: 1.2rem;
+    color: var(--text);
+    line-height: 2rem;
+}
+
+.ideas-btn, .ideas-btn:visited {
+    background-color: transparent;
+    color: var(--text-variant);
+    border: 2px solid var(--text);
+    padding: 1% 4%;
+    margin-bottom: 6%;
+    border-radius: 0.4em;
+}
+
+.ideas-btn:focus, .ideas-btn:hover {
+  padding: 1.2% 4.5%;
+  outline: none;
 }
 
 .ideas-image {
