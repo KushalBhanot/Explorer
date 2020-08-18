@@ -659,7 +659,7 @@ nav {
   transform-origin:top;
   transform-style:preserve-3d;
   border : 2px solid var(--tertiary);
-  background : var(--text-color);
+  background : var(--text);
   transition:0.5s;
   transition-delay:0.2s;
 }
