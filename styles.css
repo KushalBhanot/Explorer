@@ -597,3 +597,27 @@ nav {
     padding-top: 30vh;
     height: 90vh;
 }
+
+/* ideas section */
+#ideas-section {
+  text-align: center;
+  padding-top: 12%;
+  height: 90vh;
+  background-image: url('assets/images/hero\ background\ for\ mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.idea-submit-btn, .idea-submit-btn:visited {
+    background-color: transparent;
+    color: var(--tertiary);
+    border: 2px solid var(--text-variant);
+    padding: 1% 4%;
+    margin-bottom: 6%;
+    border-radius: 0.4em;
+}
+
+.idea-submit-btn:focus, .idea-submit-btn:hover {
+  padding: 1.2% 4.5%;
+  outline: none;
+}
