@@ -606,7 +606,7 @@ nav {
 .club-h-div {
   clip-path:polygon(0 0,100% 0,100% 100%,95% 60%,50% 100%,6% 60%,0 100%);
   background : var(--tertiary);
-  color : var(--text-color);
+  color : var(--text);
   padding : 20px;
   margin-left : 10%;
   margin-right : 10%;
@@ -616,7 +616,7 @@ nav {
   justify-content:center;
   align-items:center;
   min-height:100vh;
-  background : var(--secondary);
+  background : var(--primary-variant);
   border-left : 2px solid var(--tertiary);
   border-right : 2px solid var(--tertiary);
   border-bottom : 2px solid var(--tertiary);
