@@ -64,10 +64,11 @@
     </nav>
 
     <section id="ideas-section">
-        <div class="container-fluid"><a href=""><button class="btn btn-lg btn-dark idea-submit-btn">Login to submit
+        <div class="container-fluid"><a href=""><button type="button" onclick="sa()"
+                    class="btn btn-lg btn-dark idea-submit-btn">Login
+                    to submit
                     idea/s</button></a>
         </div>
-
     </section>
 
     <section id="credit">
@@ -79,6 +80,18 @@
             <p>All rights reserved.</p>
         </div>
     </section>
+
+    <script>
+        function sa() {
+            event.preventDefault();
+            return Swal.fire(
+                'Success',
+                "You've logged in",
+            )
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 
 </html>
