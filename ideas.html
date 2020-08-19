@@ -84,11 +84,10 @@
     <script>
         function sa() {
             event.preventDefault();
-            return Swal.fire(
-                icon: 'success',
-                title: "Welcome to Explorer!",
-                showConfirmButton: false,
-                timer: 1500
+            returnSwal.fire(
+                'Welcome to Explorer!',
+                "You've successfully logged in",
+                'success'
             )
         }
     </script>
