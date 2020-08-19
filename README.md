@@ -16,10 +16,10 @@
 
 ### Issues to be fixed
 
-- [] Change the UI/UX of the story and ideas section
-- [] The CTA navigates above the div
-- [] Hamburger isn't going with the color scheme 
-- [] Fix the mobile view for ideas section
+- [x] Change the UI/UX of the story and ideas section
+- [x] The CTA navigates above the div
+- [x] Hamburger isn't going with the color scheme 
+- [x] Fix the mobile view for ideas section
 - [] onClick() through JS
 - [] Clubs & Societies and Wall of Fame have the same background color
 
