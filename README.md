@@ -13,6 +13,9 @@
 - [] Loading Animation 
 - [] Centralised event notifications according to Tech Field
 - [] Add a button in ideas section to revert to repo's issues
+- [] firebase.analytics()
+- [] firebase.auth()
+- [] firebase.firestore()
 
 ### Issues to be fixed
 
