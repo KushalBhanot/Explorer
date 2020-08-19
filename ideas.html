@@ -85,8 +85,10 @@
         function sa() {
             event.preventDefault();
             return Swal.fire(
-                'Success',
-                "You've logged in",
+                icon: 'success',
+                title: "Welcome to Explorer!",
+                showConfirmButton: false,
+                timer: 1500
             )
         }
     </script>
