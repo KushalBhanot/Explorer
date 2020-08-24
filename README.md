@@ -8,6 +8,8 @@
 - [x] Some use of typer.js
 - [x] Loadup Animations for different sections and its elements
 
+- [] A web page for exchanging/buying books
+- [] Resturant/food places nearby with deals
 - [] Examination Reminder (big feature)
 - [] Animated Button (for better UX)
 - [] Loading Animation 
