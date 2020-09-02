@@ -51,6 +51,9 @@
                     <a class="nav-link px-4" href="resources.html">Resources</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link px-4" href="books.html">Books</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link px-4" href="clubs.html">Clubs & Societies</a>
                 </li>
                 <li class="nav-item">
@@ -63,9 +66,9 @@
         </div>
     </nav>
 
-    <section id="ideas-section">
+    <section id="ideas-section" data-aos="fade-in" data-aos-duration="800">
         <div class="container-fluid"><a href=""><button type="button" onclick="sa()"
-                    class="btn btn-lg btn-dark idea-submit-btn">Login
+                    class="btn btn-lg btn-dark idea-submit-btn" data-aos="slide-up" data-aos-duration=" 800">Login
                     to submit
                     idea/s</button></a>
         </div>
@@ -86,13 +89,15 @@
             event.preventDefault();
             return Swal.fire(
                 'Welcome to Explorer!',
-                "It's time to turn your idea into reality :)",
+                "It's time to turn your idea into reality!",
                 'success'
             )
         }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
