@@ -26,10 +26,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="app.js"></script>
 </head>
 
 <body>
+    <div class="preloader" id="preloader" style="#preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+
+    <!-- <div id="loader"></div>
+    <div id="content"> -->
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">
             E.
@@ -67,22 +76,26 @@
     </nav>
 
     <section id="hero-section">
-        <div class="container-fluid" data-aos="slide-up" data-aos-duration="600">
+        <div class="container-fluid" data-aos="slide-up" data-aos-duration="600" data-aos-delay="2000">
             <!-- Navbar -->
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Explorer</h1>
-                    <p><span class="typer" id="main"
-                            data-words="Are you confused?, Looking for some inspiration/resources?, We got you all covered!"
-                            data-delay="100" data-deleteDelay="1000" data-loop="1"></span>
-                        <span class="cursor" data-owner="main"></span></p>
+                    <p><span class="typer" id="main" data-words="One-stop platform for all your needs!" data-delay="100"
+                            data-deleteDelay="1000" data-loop="1"></span>
+                        <span class="cursor" data-owner="main"></span>
+                    </p>
+                    <!-- <p><span class="typer" id="main"
+                                data-words="Are you confused?, Looking for some inspiration/resources?, We got you all covered!"
+                                data-delay="100" data-deleteDelay="1000" data-loop="1"></span>
+                            <span class="cursor" data-owner="main"></span></p> -->
                     <a href="#story"><button type="button" class="btn btn-dark btn-lg call-to-action">
                             Learn more</button></a>
                 </div>
                 <!-- <div class="col-lg-6">
-                    <img class="hero-image" src="assets/images/undraw_searching_p5ux.svg" width="100%" height="80%"
-                        alt=" confused?">
-                </div> -->
+                        <img class="hero-image" src="assets/images/undraw_searching_p5ux.svg" width="100%" height="80%"
+                            alt=" confused?">
+                    </div> -->
             </div>
         </div>
     </section>
@@ -96,12 +109,15 @@
                 </div>
                 <div class="col-lg-6">
                     <h1>How it all began?</h1>
-                    <p>When I was a fresher, I had a lot of questions in mind. I wanted to learn, but I felt a lack of
+                    <p>When I was a fresher, I had a lot of questions in mind. I wanted to learn, but I felt a lack
+                        of
                         guidance. University
-                        life is very different from school life. Everything picks up a pace and often, one might feel
+                        life is very different from school life. Everything picks up a pace and often, one might
+                        feel
                         lost amidst this chaos.<br><br>
 
-                        Explorer is a one-of-its-kind initiative to bridge this gap of mentorship and resources. We want
+                        Explorer is a one-of-its-kind initiative to bridge this gap of mentorship and resources. We
+                        want
                         our juniors to feel
                         confident in what they do. For all the Chitkarians, by the Chitkarians!<br><br>
 
@@ -117,7 +133,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h1>Want to bring your ideas to life?</h1>
-                    <p>Developer life is all about working constructively to find solutions to real-life problems faced
+                    <p>Developer life is all about working constructively to find solutions to real-life problems
+                        faced
                         by communities. We
                         would love to receive unique ideas from you. The best ones may be nominated as team
                         projects!<br><br>
@@ -152,6 +169,26 @@
             <p>All rights reserved.</p>
         </div>
     </section>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).load(function () {
+                function Preloader() {
+                    var preloader = $('.loader');
+                    preloader.delay(1000).fadeOut(500);
+                    var preloader = $('.preloader');
+                    preloader.delay(1500).slideUp(500);
+                }
+                if (!sessionStorage.getItem('doNotShow')) {
+                    sessionStorage.setItem('doNotShow', true);
+                    Preloader();
+                } else {
+                    $('.loader, .preloader').fadeOut(100);
+                }
+            });
+        });
+    </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
