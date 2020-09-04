@@ -36,15 +36,12 @@
         </div>
     </div>
 
-    <!-- <div id="loader"></div>
-    <div id="content"> -->
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">
             E.
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,34 +76,24 @@
             <!-- Navbar -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Explorer</h1>
-                    <p><span class="typer" id="main" data-words="One-stop platform for all your needs!" data-delay="100"
+                    <h1><span class="underline--magical">Explorer</span></h1>
+                    <p>Provides you with everything that you need to excel during your varsity years!<br>
+                        <span class="typer" id="main" data-words="Isn't that cool?" data-delay="100"
                             data-deleteDelay="1000" data-loop="1"></span>
                         <span class="cursor" data-owner="main"></span>
                     </p>
-                    <!-- <p><span class="typer" id="main"
-                                data-words="Are you confused?, Looking for some inspiration/resources?, We got you all covered!"
-                                data-delay="100" data-deleteDelay="1000" data-loop="1"></span>
-                            <span class="cursor" data-owner="main"></span></p> -->
                     <a href="#story"><button type="button" class="btn btn-dark btn-lg call-to-action">
                             Learn more</button></a>
                 </div>
-                <!-- <div class="col-lg-6">
-                        <img class="hero-image" src="assets/images/undraw_searching_p5ux.svg" width="100%" height="80%"
-                            alt=" confused?">
-                    </div> -->
             </div>
         </div>
     </section>
 
     <section id="story">
-        <div class="container-fluid" data-aos="slide-left" data-aos-duration="800">
+        <img src="assets/svg/wave-top.svg" alt="Wave">
+        <div class="container-fluid story-container" data-aos="zoom-in" data-aos-duration="800">
             <div class="row">
-                <div class="col-lg-6">
-                    <img class="story-image" src="assets/images/undraw_instant_support_elxh (1).svg" width="100%"
-                        alt=" story">
-                </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12 content">
                     <h1>How it all began?</h1>
                     <p>When I was a fresher, I had a lot of questions in mind. I wanted to learn, but I felt a lack
                         of
@@ -125,12 +112,14 @@
                 </div>
             </div>
         </div>
+        <img class="wave-bottom" width="100%" height="20%" src="assets/svg/wave-bottom.svg" alt="Wave">
     </section>
 
     <section id="ideas">
-        <div class="container-fluid" data-aos="slide-right" data-aos-duration="800">
+        <img class="wave-top" src="assets/svg/wave-top (2).svg" alt="Wave">
+        <div class="container-fluid ideas-container" data-aos="zoom-in" data-aos-duration="800">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <h1>Want to bring your ideas to life?</h1>
                     <p>Developer life is all about working constructively to find solutions to real-life problems
                         faced
@@ -143,24 +132,18 @@
                     <a href="ideas.html"><button type="button" class="btn btn-dark btn-lg ideas-btn">
                             Let's build it!</button></a>
                 </div>
-                <div class="col-lg-6">
-                    <img class="ideas-image" width="100%" src="assets/images/undraw_software_engineer_lvl5.svg"
-                        alt="ideas">
-                </div>
             </div>
         </div>
-    </section>
-
-    <section id="socials">
-        <div class="container-fluid">
-            <i class="fab fa-github fa-3x white-icons"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fab fa-linkedin-in fa-3x white-icons"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fab fa-instagram fa-3x white-icons"></i>
-        </div>
+        <img class="wave-bottom" width="100%" height="20%" src="assets/svg/wave-bottom (2).svg" alt="Wave">
     </section>
 
     <section id="credit">
         <div class="container-fluid">
+            <div id="socials">
+                <a target="_blank" href="https://github.com/KushalBhanot/Explorer"><i
+                        class="fab fa-github fa-3x white-icons"></i></a>
+            </div>
+
             <p>Made with &hearts; by
                 <a target="_blank" href="https://www.github.com/KushalBhanot">Kushal Bhanot</a> and <a target="_blank"
                     href="https://github.com/Divyanshwick">Divyansh Kumar</a> </p>
@@ -188,7 +171,6 @@
             });
         });
     </script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script>AOS.init();</script>
