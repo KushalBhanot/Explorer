@@ -73,8 +73,8 @@ body {
 
 /* Navigation Bar */
 nav {
-   background: var(--text-variant);
-   color: var(--text);
+   background: rgba(0, 0, 0, 0.05);
+   color: var(--text-variant);
    z-index: 1;
 }
 
@@ -87,7 +87,7 @@ nav {
 .navbar-brand {
     font-size: 2rem;
     font-weight: bolder;
-    color: var(--text);
+    color: var(--text-variant);
 }
 
 .nav-item:hover {
@@ -97,11 +97,11 @@ nav {
 .nav-link {
     font-size: 1.5 rem;
     font-weight: normal;
-    color: var(--text);
+    color: var(--text-variant);
 }
 
 .navbar-toggler i {
-    color: var(--text);
+    color: var(--text-variant);
 }
 
 .navbar-brand:hover, .nav-link:hover, .navbar-toggler i:hover {
@@ -110,36 +110,44 @@ nav {
 
 /* hero section */
 #hero-section {
-    background-image: url('assets/images/Untitled\ design\ \(4\).png');
+    background-image: url('assets/images/hero\ background\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     text-align: center;
     margin-top: -74px;
-    /* padding-top: 10%; */
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
 }
 
 /* Making the hero background responsive */
 @media only screen and (max-width: 720px) {
-  #hero-section {
-    background-image: url('assets/images/hero\ background\ for\ mobile\ \(1\).png');
-  }
-
   #hero-section h1 {
     padding-top: 160px;
   }
 }
 #hero-section h1 {
-    color: var(--text);
-    margin-top: 16%;
+    color: var(--text-variant);
+    margin-top: 14%;
     font-size: 5rem;
     line-height: 1.25;
     font-weight: normal;
     padding-bottom: 3%;
+    letter-spacing: 5px;
 }
 
 #hero-section p {
-    color: var(--text-variant);
+    color: var(--tertiary);
     font-size: 1.5rem;
     padding-bottom: 50px;
 }
@@ -150,14 +158,15 @@ nav {
 
 .call-to-action, .call-to-action:visited {
     background-color: transparent;
-    color: var(--text-variant);
-    border: 2px solid var(--text);
+    color: var(--tertiary);
+    border: 2px solid var(--tertiary);
     padding: 1% 4%;
     margin-bottom: 6%;
     border-radius: 0.4em;
 }
 
 .call-to-action:focus, .call-to-action:hover {
+  background-color: var(--tertiary);
   padding: 1.2% 4.5%;
   outline: none;
 }
@@ -178,45 +187,88 @@ nav {
 }
 
 /* story section */
-#story {
-    background-color: var(--primary-variant);
+.story-container {
+  margin-top: -100px;
+  padding-top: 0;
+  text-align: center;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+#story .wave-bottom {
+   margin-top: -50px;
+}
+
+@media only screen and (max-width: 728px) {
+  .story-container {
+    margin-top: -40px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  #story .wave-bottom {
+    margin-top: -30px;
+  }
 }
 
 #story h1 {
-    color: var(--text);
-    margin-bottom: 7%;
+  color: rgb(39, 51, 57);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 106%;
+  padding-bottom: 5%;
 }
 
 #story p {
-    font-size: 1.2rem;
-    color: var(--text);
-    line-height: 2rem;
+  font-size: 20px;
+  line-height: 154%;
+  color: rgb(39, 51, 57);
 }
 
 .story-image {
     margin-bottom: 5%;
 }
 
-/* ideas section */
-#ideas {
-    background-color: var(--primary);
+/* ideas */
+.ideas-container {
+  margin-top: -120px;
+  padding-top: 2%;
+  text-align: center;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 728px) {
+  .ideas-container {
+    margin-top: -20px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  #ideas .wave-bottom {
+    margin-top: -20px;
+  }
 }
 
 #ideas h1 {
-    color: var(--text);
-    margin-bottom: 7%;
+  color: rgb(39, 51, 57);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 106%;
+  padding-bottom: 5%;
 }
 
 #ideas p {
-    font-size: 1.2rem;
-    color: var(--text);
-    line-height: 2rem;
+  font-size: 20px;
+  line-height: 154%;
+  color: rgb(39, 51, 57);
 }
 
 .ideas-btn, .ideas-btn:visited {
     background-color: transparent;
-    color: var(--text-variant);
-    border: 2px solid var(--text);
+    color: var(--tertiary);
+    border: 2px solid var(--tertiary);
     padding: 1% 4%;
     margin-bottom: 6%;
     border-radius: 0.4em;
@@ -225,6 +277,8 @@ nav {
 .ideas-btn:focus, .ideas-btn:hover {
   padding: 1.2% 4.5%;
   outline: none;
+  background-color: var(--tertiary);
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .ideas-image {
@@ -233,8 +287,9 @@ nav {
 
 /* socials section */
 #socials {
-    background-color: var(--text-variant);
+    background-color: var(--tertiary);
     text-align: center;
+    padding-bottom: 2%;
 }
 
 .white-icons {
@@ -242,22 +297,22 @@ nav {
 }
 
 .white-icons:hover {
-  color: var(--primary-variant);
+  color: var(--highlight);
 }
 
 /* credit section */
 #credit {
     text-align: center;
     color: var(--text);
-    background-color: var(--text-variant);
+    background-color: var(--tertiary);
 }
 
 #credit a {
-  color: var(--primary);
+  color: var(--text);
 }
 
 #credit a:hover {
-  color: var(--text-color);
+  color: var(--primary-variant);
   text-decoration: none;
 }
 
@@ -655,11 +710,8 @@ nav {
 /* ideas section */
 #ideas-section {
   text-align: center;
-  padding-top: 12%;
   height: 90vh;
-  background-image: url('assets/images/hero\ background\ for\ mobile.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 12%;
 }
 
 .idea-submit-btn, .idea-submit-btn:visited {
