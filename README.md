@@ -8,12 +8,12 @@
 - [x] Customized Scroll Bar
 - [x] Some use of typer.js
 - [x] Loadup Animations for different sections and its elements
+- [x] Loading Animation
+- [x] A web page for exchanging/buying books
 
-- [] A web page for exchanging/buying books
 - [] Resturant/food places nearby with deals
 - [] Examination Reminder (big feature)
-- [] Animated Button (for better UX)
-- [] Loading Animation 
+- [] Animated Button (for better UX) 
 - [] Centralised event notifications according to Tech Field
 - [] Add a button in ideas section to revert to repo's issues
 - [] firebase.analytics()
@@ -26,8 +26,7 @@
 - [x] The CTA navigates above the div
 - [x] Hamburger isn't going with the color scheme 
 - [x] Fix the mobile view for ideas section
-- [] onClick() through JS
-- [] Clubs & Societies and Wall of Fame have the same background color
+- [x] Clubs & Societies and Wall of Fame have the same background color
 
 Future Scope -> 
 - Make an app for the same.
