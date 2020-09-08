@@ -1,4 +1,5 @@
 # Explorer
+[![HitCount](http://hits.dwyl.com/KushalBhanot/Explorer.svg)](http://hits.dwyl.com/KushalBhanot/Explorer)
 
 - [x] Home Page
 - [x] Resources
