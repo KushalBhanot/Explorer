@@ -1,6 +1,12 @@
 
 # Explorer
 
+**Develop:**
+https://explorer-chi.vercel.app/
+
+**Production:** 
+https://explorer-kd.herokuapp.com/
+
 ## Contributions to this repo are WELCOME ⚡️🙌🏻
 - :art: give suggestions on how to improve the UI design
 - :hammer: try to break the website by testing it to find any bugs. If you find any, check if there is an issue already open for it, if there is none, then report it 
