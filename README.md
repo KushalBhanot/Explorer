@@ -45,3 +45,5 @@
 	
 **6.** Create a Pull Request 🤟🏻 
 	<br>If you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button. We'll review your code and merge it if it passes all the tests ❤️
+
+[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://github.com/KushalBhanot)
