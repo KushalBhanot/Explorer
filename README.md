@@ -1,3 +1,4 @@
+
 # Explorer
 
 ## Contributions to this repo are WELCOME ⚡️🙌🏻
@@ -5,7 +6,7 @@
 - :hammer: try to break the website by testing it to find any bugs. If you find any, check if there is an issue already open for it, if there is none, then report it 
 - 🤸🏻 If you're new to open-source contributions, then you can simple start by picking up a **ToDo** given below 😊
 
-## ToDo
+## ToDo 🤸🏻
 - [] Weekly Email regarding oppurtunities (Newsletter)
 - [] Add functionality to the books section
 - [] Resturant/food places nearby with deals
@@ -19,3 +20,20 @@
 - [] Make an app for the same (**iOS/Android/Flutter**)
 - [] Make a game for directions of Chitkara University (**AR/VR/JavaScript WebApp**)
 - [] Open Source section for others to showcase their projects
+
+## Steps to be followed in order to make valid contributions ☘️
+
+1. **Fork this repository** 
+	Fork the [Explorer](https://github.com/KushalBhanot/Explorer) repo by clicking on the fork button on the top of the page. This will create a copy of this repository in your account.
+2. **Clone the repository**
+    `git clone "https://github.com/KushalBhanot/Explorer.git"`
+3. **Create a branch**
+	`cd Explorer`
+	`git checkout -b develop`
+4. **Make necessary changes and commit those changes**
+	`git add files-you-edited`
+	`git commit -m "Made these and that changes."`
+5. **Push changes to GitHub**
+	`git push origin develop`
+6. **Submit your changes for review**
+	If you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button.
