@@ -73,7 +73,7 @@ body {
 
 /* Navigation Bar */
 nav {
-   background: rgba(0, 0, 0, 0.05);
+   background: var(--text-variant);
    color: var(--text-variant);
    z-index: 1;
 }
@@ -87,7 +87,7 @@ nav {
 .navbar-brand {
     font-size: 2rem;
     font-weight: bolder;
-    color: var(--text-variant);
+    color: var(--text);
 }
 
 .nav-item:hover {
@@ -97,25 +97,24 @@ nav {
 .nav-link {
     font-size: 1.5 rem;
     font-weight: normal;
-    color: var(--text-variant);
+    color: var(--text);
 }
 
 .navbar-toggler i {
-    color: var(--text-variant);
+    color: var(--text);
 }
 
 .navbar-brand:hover, .nav-link:hover, .navbar-toggler i:hover {
-    color: unset;
+    color: var(--text);
 }
 
 /* hero section */
 #hero-section {
-    background-image: url('assets/images/hero\ background\ \(1\).png');
-    background-repeat: no-repeat;
+    background-image: url('./explorer-hero-image.png');
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    height: 90vh;
     text-align: center;
-    margin-top: -74px;
 }
 
 .underline--magical {
@@ -137,8 +136,8 @@ nav {
   }
 }
 #hero-section h1 {
-    color: var(--text-variant);
-    margin-top: 14%;
+    color: #000;
+    margin-top: 12%;
     font-size: 5rem;
     line-height: 1.25;
     font-weight: normal;
@@ -156,23 +155,15 @@ nav {
   background-color: transparent;
 } */
 
-.call-to-action, .call-to-action:visited {
-    background-color: transparent;
-    color: var(--tertiary);
-    border: 2px solid var(--tertiary);
-    padding: 1% 4%;
-    margin-bottom: 6%;
-    border-radius: 0.4em;
-}
-
-.call-to-action:focus, .call-to-action:hover {
+.cta {
+  color: var(--text);
   background-color: var(--tertiary);
-  padding: 1.2% 4.5%;
-  outline: none;
+  border-radius: 30px;
+  padding: 10px 45px;
 }
-
-.call-to-action:hover {
-  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+.cta:hover {
+  color: var(--text);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* For Mobile Screens */
@@ -232,11 +223,16 @@ nav {
 /* ideas */
 .ideas-container {
   margin-top: -120px;
-  padding-top: 2%;
   text-align: center;
-  padding-left: 12%;
-  padding-right: 12%;
+}
+#ideas-section {
+  background-image: url('./ideas-background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* padding-top: -120px; */
+  text-align: center;
   padding-bottom: 0;
+  height: 90vh;
 }
 
 @media only screen and (max-width: 728px) {
