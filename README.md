@@ -1,8 +1,8 @@
 
 # Explorer
 
-**Develop:**
-https://explorer-chi.vercel.app/
+<!-- **Develop:**
+https://explorer-chi.vercel.app/ -->
 
 **Production:** 
 https://explorer-kd.herokuapp.com/
