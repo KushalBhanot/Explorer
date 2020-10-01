@@ -157,7 +157,7 @@ nav {
 
 .cta {
   color: #fafaff;
-  background-color: #111317;
+  background-color: #234183;
   border-radius: 30px;
   padding: 10px 45px;
   cursor: pointer;
@@ -165,7 +165,7 @@ nav {
 }
 .cta:hover {
   color: var(--text);
-  background-color: #234183;
+  background-color:  #15254b;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
