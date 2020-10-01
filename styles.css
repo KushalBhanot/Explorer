@@ -801,13 +801,25 @@ nav {
     background-color: transparent;
     color: var(--tertiary);
     border: 2px solid var(--text-variant);
-    padding: 1% 4%;
-    margin-bottom: 6%;
+    /* padding: 1% 4%; */
     border-radius: 0.4em;
 }
 
-.idea-submit-btn:focus,
-.idea-submit-btn:hover {
+.issue-btn:focus,
+.issue-btn:hover {
+    padding: 1.2% 4.5%;
+    outline: none;
+}
+.issue-btn,
+.issue-btn:visited {
+    background-color: transparent;
+    color: var(--tertiary);
+    border: 2px solid var(--text-variant);
+    border-radius: 0.4em;
+}
+
+.issue-btn:focus,
+.issue-btn:hover {
     padding: 1.2% 4.5%;
     outline: none;
 }
