@@ -446,18 +446,21 @@ nav {
 	text-align: center;
 }
 
-@media (max-width: 750px) {
-	.grid {
-		display: grid;
-		grid-gap: 3em;
-		grid-template-columns: repeat(1, 1fr);
-	}
+@media (max-width: 1024px) {
 	.club {
 		flex-direction: column;
 		text-align: center;
 	}
 	.club img {
 		margin: 0;
+	}
+}
+
+@media (max-width: 750px) {
+	.grid {
+		display: grid;
+		grid-gap: 3em;
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
