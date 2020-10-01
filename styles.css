@@ -846,7 +846,7 @@ nav {
 
 .idea-submit-btn,
 .idea-submit-btn:visited {
-    background-color: transparent;
+    background-color: #FFF;
     color: var(--tertiary);
     border: 2px solid var(--text-variant);
     padding: 1% 4%;
