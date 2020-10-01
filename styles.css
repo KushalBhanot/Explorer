@@ -368,13 +368,16 @@ nav {
 }
 
 .club {
-  padding-top: 2%;
+  padding: 30px 30px;
   margin-bottom: 5%;
 }
 
 @media not all and (pointer: coarse) {
   .club:hover {
-    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5); */
+    -webkit-box-shadow: 0px 0px 35px -6px rgba(0,0,0,0.76);
+    -moz-box-shadow: 0px 0px 35px -6px rgba(0,0,0,0.76);
+    box-shadow: 0px 0px 35px -6px rgba(0,0,0,0.76);
     border-radius: 2%;
     transform: scale(1.01);
     transition-duration: 0.5s;
