@@ -4,8 +4,8 @@
 **Develop:**
 https://explorer-chi.vercel.app/
 
-**Production:** 
-https://explorer-kd.herokuapp.com/
+<!--**Production:** 
+https://explorer-kd.herokuapp.com/-->
 
 ## Contributions to this repo are WELCOME ⚡️🙌🏻
 - :art: give suggestions on how to improve the UI design
