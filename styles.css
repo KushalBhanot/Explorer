@@ -764,3 +764,42 @@ nav {
     text-align: center;
   }
 }
+
+
+/* new hero button css */
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: black;
+  /* border: 1px solid black; */
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 43%;
+  bottom: 0;
+  fill: none;
+  stroke: whitesmoke;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
