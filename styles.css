@@ -156,8 +156,8 @@ nav {
 } */
 
 .cta {
-  color: #111317;
-  background-color: var(--text);
+  color: #fafaff;
+  background-color: #111317;
   border-radius: 30px;
   padding: 10px 45px;
   cursor: pointer;
