@@ -768,7 +768,7 @@ nav {
 
 /* new hero button css */
 
-.btn {
+.hero-btn {
   width: 180px;
   height: 60px;
   cursor: pointer;
@@ -789,16 +789,16 @@ svg {
   transition: 1s ease-in-out;
 }
 
-.btn:hover {
+.hero-btn:hover {
   transition: 1s ease-in-out;
   background: transparent;
 }
 
-.btn:hover svg {
+.hero-btn:hover svg {
   stroke-dashoffset: -480;
 }
 
-.btn span {
+.hero-btn span {
   color: white;
   font-size: 18px;
   font-weight: 100;
