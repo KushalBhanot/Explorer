@@ -94,8 +94,10 @@ nav {
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 2.5rem;
     font-weight: bolder;
+    font-style: italic;
     color: var(--text);
 }
 
