@@ -404,6 +404,10 @@ nav {
     letter-spacing: 2px;
 }
 
+#clubs-section{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 0%);
+}
 .club {
     padding-top: 2%;
     margin-bottom: 5%;
@@ -415,6 +419,7 @@ nav {
         border-radius: 2%;
         transform: scale(1.01);
         transition-duration: 0.5s;
+        background-color: white;
     }
 }
 
