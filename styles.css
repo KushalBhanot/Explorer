@@ -155,7 +155,7 @@ nav {
   background-color: transparent;
 } */
 
-.btn {
+.btn-new {
   letter-spacing: 0.1em;
   cursor: pointer;
   font-size: 14px;
@@ -166,7 +166,7 @@ nav {
   text-decoration: none;
   width: 100%;
 }
-.btn:hover {
+.btn-new:hover {
   text-decoration: none;
 }
 
