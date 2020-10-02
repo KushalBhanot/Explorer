@@ -257,7 +257,7 @@ nav {
 
 #ideas-section {
     background-image: url('./ideas-background.gif');
-    background-size: cover;
+    background-size: 100% 134%;
     background-repeat: no-repeat;
     /* padding-top: -120px; */
     text-align: center;
