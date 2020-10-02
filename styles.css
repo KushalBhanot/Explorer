@@ -177,17 +177,25 @@ nav {
 } */
 
 .cta {
-    color: var(--text);
-    background-color: var(--tertiary);
-    border-radius: 30px;
-    padding: 10px 45px;
+  color: #fafaff;
+  background-color: #234183;
+  border-radius: 30px;
+  padding: 10px 45px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .cta:hover {
-    color: var(--text);
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  color: var(--text);
+  background-color:  #15254b;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.cta:active {
+  transition: 0.2s;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+  transform: translateY(4px)
+}
 
 /* For Mobile Screens */
 
