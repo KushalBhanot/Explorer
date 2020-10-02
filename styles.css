@@ -269,6 +269,7 @@ nav {
     text-align: center;
     padding-bottom: 0;
     height: 90vh;
+    background-position: center;
 }
 
 @media only screen and (max-width: 728px) {
@@ -874,7 +875,7 @@ nav {
 
 .idea-submit-btn,
 .idea-submit-btn:visited {
-    background-color: transparent;
+    background-color: #FFF;
     color: var(--tertiary);
     border: 2px solid var(--text-variant);
     padding: 1% 4%;
