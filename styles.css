@@ -7,7 +7,6 @@
     outline: none;
 }
 
-
 /* Preloader */
 
 .preloader {
@@ -31,7 +30,6 @@
     background: #fff url('assets/loader/loading.gif') no-repeat center center;
 }
 
-
 /* color scheme */
 
 :root {
@@ -42,7 +40,6 @@
     --text-variant: #000;
     --highlight: #4194ff;
 }
-
 
 /* overall adjustments */
 
@@ -57,7 +54,6 @@ body {
 .container-fluid {
     padding: 3% 10%;
 }
-
 
 /* scroll bar */
 
@@ -77,7 +73,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
 
 /* Navigation Bar */
 
@@ -101,6 +96,7 @@ nav {
 
 .nav-item {
     border-bottom: 2px solid var(--text-variant);
+    transition: color .2s ease-out, border-bottom-color .2s ease-out;
 }
 
 .nav-item:hover {
@@ -117,12 +113,9 @@ nav {
     color: var(--text);
 }
 
-.navbar-brand:hover,
-.nav-link:hover,
-.navbar-toggler i:hover {
+.navbar-brand:hover, .nav-link:hover, .navbar-toggler i:hover {
     color: var(--text);
 }
-
 
 /* hero section */
 
@@ -145,7 +138,6 @@ nav {
 .underline--magical:hover {
     background-size: 100% 88%;
 }
-
 
 /* Making the hero background responsive */
 
@@ -171,44 +163,68 @@ nav {
     padding-bottom: 50px;
 }
 
-
 /* .hero-image {
   background-color: transparent;
 } */
 
 .cta {
-  color: #fafaff;
-  background-color: #234183;
-  border-radius: 30px;
-  padding: 10px 45px;
-  cursor: pointer;
-  transition: 0.5s;
+    color: #fafaff;
+    background-color: #234183;
+    border-radius: 30px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .cta:hover {
-  color: var(--text);
-  background-color:  #15254b;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    color: var(--text);
+    background-color: #15254b;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .cta:active {
-  transition: 0.2s;
-  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
-  transform: translateY(4px)
+    transition: 0.2s;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    transform: translateY(4px)
 }
 
 /* For Mobile Screens */
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 480px) {
     #hero-section h1 {
         font-size: 2.75em;
         font-weight: 800;
+        margin: 0;
     }
     #hero-section p {
         width: 90%;
+        margin: 0.5em auto;
+        padding: 1em 1.5em;
+        background: rgba(255, 255, 255, 0.7);
     }
 }
 
+/* Tablet Landscape */
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #hero-section p {
+        width: 90%;
+        margin: 0.5em auto;
+        padding: 1em 1.5em;
+        background: rgba(255, 255, 255, 0.7);
+    }
+}
+
+/* Tablet */
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    #hero-section p {
+        width: 90%;
+        margin: 0.5em auto;
+        padding: 1em 1.5em;
+        background: rgba(255, 255, 255, 0.7);
+    }
+}
 
 /* story section */
 
@@ -253,7 +269,6 @@ nav {
     margin-bottom: 5%;
 }
 
-
 /* ideas */
 
 .ideas-container {
@@ -297,8 +312,7 @@ nav {
     color: rgb(39, 51, 57);
 }
 
-.ideas-btn,
-.ideas-btn:visited {
+.ideas-btn, .ideas-btn:visited {
     background-color: transparent;
     color: var(--tertiary);
     border: 2px solid var(--tertiary);
@@ -307,8 +321,7 @@ nav {
     border-radius: 0.4em;
 }
 
-.ideas-btn:focus,
-.ideas-btn:hover {
+.ideas-btn:focus, .ideas-btn:hover {
     padding: 1.2% 4.5%;
     outline: none;
     background-color: var(--tertiary);
@@ -318,7 +331,6 @@ nav {
 .ideas-image {
     margin-top: 5%;
 }
-
 
 /* socials section */
 
@@ -336,7 +348,6 @@ nav {
     color: var(--highlight);
 }
 
-
 /* credit section */
 
 #credit {
@@ -353,7 +364,6 @@ nav {
     color: var(--primary-variant);
     text-decoration: none;
 }
-
 
 /* resources */
 
@@ -402,78 +412,76 @@ nav {
     color: var(--highlight);
 }
 
-
 /* clubs & societies */
 
 .club img {
-	width: 10em;
-	margin-right: 2em;
+    width: 10em;
+    margin-right: 2em;
 }
 
 .club h2 {
-	font-size: 2.3em;
+    font-size: 2.3em;
 }
 
 .club h5 {
-	text-transform: uppercase;
-	font-size: 1.1em;
-	letter-spacing: 0.1em;
-	color: rgb(95, 95, 95);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    color: rgb(95, 95, 95);
 }
 
 #clubs-section {
-	margin: 2em 0;
+    margin: 2em 0;
 }
 
 .club {
-	border: solid 2px rgb(201, 198, 198);
-	border-radius: 1em;
-	padding: 2em;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	width: 100%;
-	transition: 0.4s;
+    border: solid 2px rgb(201, 198, 198);
+    border-radius: 1em;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    transition: 0.4s;
 }
 
 .club:hover {
-  transform: translateY(-4px);
-  border-color: #FFAE3F;
+    transform: translateY(-4px);
+    border-color: #FFAE3F;
 }
 
 .title {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .grid {
-	display: grid;
-	grid-gap: 3em;
-	grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .centercom {
-	text-align: center;
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
-	.club {
-		flex-direction: column;
-		text-align: center;
-	}
-	.club img {
-		margin: 0;
-		margin-bottom: 1em;
-	}
+    .club {
+        flex-direction: column;
+        text-align: center;
+    }
+    .club img {
+        margin: 0;
+        margin-bottom: 1em;
+    }
 }
 
 @media (max-width: 750px) {
-	.grid {
-		display: grid;
-		grid-gap: 3em;
-		grid-template-columns: repeat(1, 1fr);
-	}
+    .grid {
+        display: grid;
+        grid-gap: 3em;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-
 
 /* Wall of Fame */
 
@@ -537,19 +545,10 @@ nav {
 }
 
 @keyframes animate {
-    0%,
-    20%,
-    40%,
-    60%,
-    80%,
-    100% {
+    0%, 20%, 40%, 60%, 80%, 100% {
         opacity: 0;
     }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
+    10%, 30%, 50%, 70%, 90% {
         opacity: 1;
     }
 }
@@ -621,8 +620,7 @@ nav {
     box-shadow: 5px 5px 10px var(--tertiary);
 }
 
-.card:hover h3,
-.card:hover i {
+.card:hover h3, .card:hover i {
     color: var(--text);
 }
 
@@ -693,7 +691,6 @@ nav {
     }
 }
 
-
 /* Contact */
 
 .contact {
@@ -718,7 +715,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 0;    
+    padding: 30px 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -733,8 +730,8 @@ nav {
     }
 }
 
-@media only screen and (max-width: 480px){
-    .fBox>form{
+@media only screen and (max-width: 480px) {
+    .fBox>form {
         padding: 0 0 0 20px !important;
     }
 }
@@ -772,8 +769,7 @@ nav {
     margin-bottom: 0;
 }
 
-.fBox form .iBox input,
-.fBox form .iBox textarea {
+.fBox form .iBox input, .fBox form .iBox textarea {
     position: relative;
     background: transparent;
     width: 80%;
@@ -825,24 +821,17 @@ nav {
     transition: all 0.2s;
 }
 
-.fBox form .iBox input:focus~span,
-.fBox form .iBox textarea:focus~span,
-.fBox form .iBox input:valid~span,
-.fBox form .iBox textarea:valid~span {
+.fBox form .iBox input:focus~span, .fBox form .iBox textarea:focus~span, .fBox form .iBox input:valid~span, .fBox form .iBox textarea:valid~span {
     transform: translateY(-24px);
     color: var(--primary-variant);
     font-size: 14px;
 }
 
-.fBox form .iBox input:focus,
-.fBox form .iBox textarea:focus,
-.fBox form .iBox input:valid,
-.fBox form .iBox textarea:valid {
+.fBox form .iBox input:focus, .fBox form .iBox textarea:focus, .fBox form .iBox input:valid, .fBox form .iBox textarea:valid {
     border-bottom-color: var(--text-color);
 }
 
-.fBox form .iBox input[type="submit"]:focus,
-.fBox form .iBox input[type="submit"]:hover {
+.fBox form .iBox input[type="submit"]:focus, .fBox form .iBox input[type="submit"]:hover {
     border-bottom-color: var(--primary-variant);
 }
 
@@ -855,7 +844,6 @@ nav {
     height: 100%; */
 }
 
-
 /*  under development */
 
 #under-dev {
@@ -863,7 +851,6 @@ nav {
     padding-top: 30vh;
     height: 90vh;
 }
-
 
 /* ideas section */
 
@@ -873,8 +860,7 @@ nav {
     padding-top: 12%;
 }
 
-.idea-submit-btn,
-.idea-submit-btn:visited {
+.idea-submit-btn, .idea-submit-btn:visited {
     background-color: #FFF;
     color: var(--tertiary);
     border: 2px solid var(--text-variant);
@@ -883,12 +869,10 @@ nav {
     border-radius: 0.4em;
 }
 
-.idea-submit-btn:focus,
-.idea-submit-btn:hover {
+.idea-submit-btn:focus, .idea-submit-btn:hover {
     padding: 1.2% 4.5%;
     outline: none;
 }
-
 
 /* books section */
 
