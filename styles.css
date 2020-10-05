@@ -153,6 +153,18 @@ nav {
     #hero-section h1 {
         padding-top: 160px;
     }
+
+    /* learn more button was out of div for small screens, so fixed that */
+    #hero-section p {
+      padding-bottom: 30px;
+    }
+}
+
+/* for mobile screens the heading was out of the div because of extra padding */
+@media only screen and (max-width: 425px) {
+    #hero-section h1 {
+        padding-top: 0;
+    }
 }
 
 #hero-section h1 {
@@ -718,25 +730,26 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 0;    
+    padding: 30px 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .fBox {
-        flex: 1 auto !important;
-        order: 2;
-        padding: 30px 0;
-    }
-    .imgBx {
-        flex: 1 auto !important;
-        order: 1;
-    }
+@media screen and (max-width: 768px) {
+  .fBox {
+    flex: 1 auto !important;
+    order: 2;
+    padding: 30px 0;
+  }
+
+  .imgBx {
+    flex: 1 auto !important;
+    order: 1;
+  }
 }
 
-@media only screen and (max-width: 480px){
-    .fBox>form{
-        padding: 0 0 0 20px !important;
-    }
+@media screen and (max-width: 480px){
+  .fBox>form {
+    padding: 0 0 0 15px !important;
+  }
 }
 
 .fBox {
@@ -788,8 +801,10 @@ nav {
     resize: none;
 }
 
+/* Changed height, there was too much gap between placeholder text and the
+text typed */
 .fBox form .iBox textarea {
-    height: 100px;
+    height: 48px;
 }
 
 .fBox form .iBox input[type="submit"] {
