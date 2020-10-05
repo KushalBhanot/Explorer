@@ -153,11 +153,6 @@ nav {
 
 /* Making the hero background responsive */
 
-@media only screen and (max-width: 720px) {
-    #hero-section h1 {
-        padding-top: 160px;
-    }
-}
 
 #hero-section h1 {
     color: #000;
@@ -200,33 +195,12 @@ nav {
     transform: translateY(4px)
 }
 
-/* For Mobile Screens */
-
-@media only screen and (max-width: 480px) {
-
-    #hero-section::after {
-        opacity: 0.7;
-    }
-
-    #hero-section h1 {
-        font-size: 2.75em;
-        font-weight: 800;
-        margin: 0;
-    }
-    #hero-section p {
-        width: 90%;
-        margin: 0.5em auto;
-        padding: 1em 1.5em;
-        color: #000;
-    }
-}
-
 /* Tablet Landscape */
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
     #hero-section::after {
-        opacity: 0.7;
+        opacity: 1;
     }
 
 
@@ -243,7 +217,7 @@ nav {
 @media all and (min-width: 480px) and (max-width: 768px) {
 
     #hero-section::after {
-        opacity: 0.7;
+        opacity: 1;
     }
 
 
@@ -252,6 +226,53 @@ nav {
         margin: 0.5em auto;
         padding: 1em 1.5em;
         
+    }
+}
+
+/* For Large Mobile Screens */
+
+@media only screen and (max-width: 480px) {
+
+    #hero-section::after {
+        opacity: 1;
+        background-position: 75%;
+    }
+
+    #hero-section h1 {
+        font-size: 2.75em;
+        font-weight: 800;
+        margin: 0;
+        padding-top: 3em;
+    }
+    #hero-section p {
+        width: 90%;
+        margin: 0em auto;
+        padding: 1em 1.5em;
+        color: #000;
+    }
+}
+
+
+/* For Small Mobile Screens */
+
+@media only screen and (max-width: 380px) {
+
+    #hero-section::after {
+        opacity: 1;
+        background-position: 75%;
+    }
+
+    #hero-section h1 {
+        font-size: 2.75em;
+        font-weight: 800;
+        margin: 0;
+        padding-top: 1.7em;
+    }
+    #hero-section p {
+        width: 90%;
+        margin: 0em auto;
+        color: #000;
+        font-size: 1.2em;
     }
 }
 
