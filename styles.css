@@ -120,24 +120,17 @@ nav {
 /* hero section */
 
 
-#hero-section {
+#hero-section {    
     height: 90vh;
     text-align: center;    
-}
-
-#hero-section::after {
-    content: "";
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
     background-image: url('./explorer-hero-image.png');
     background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
+    background-repeat: no-repeat;   
+}
+
 
 .underline--magical {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
@@ -199,8 +192,12 @@ nav {
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
-    #hero-section::after {
-        opacity: 1;
+    #hero-section {
+        background-position: 75%;        
+    }
+
+    #hero-section h1 {
+        padding-top: 160px;
     }
 
 
@@ -208,7 +205,7 @@ nav {
         width: 90%;
         margin: 0.5em auto;
         padding: 1em 1.5em;
-        
+        font-size: 2rem;
     }
 }
 
@@ -216,8 +213,8 @@ nav {
 
 @media all and (min-width: 480px) and (max-width: 768px) {
 
-    #hero-section::after {
-        opacity: 1;
+    #hero-section {
+        background-position: 75%;        
     }
 
 
@@ -225,7 +222,7 @@ nav {
         width: 90%;
         margin: 0.5em auto;
         padding: 1em 1.5em;
-        
+        font-size: 2rem;
     }
 }
 
@@ -233,9 +230,8 @@ nav {
 
 @media only screen and (max-width: 480px) {
 
-    #hero-section::after {
-        opacity: 1;
-        background-position: 75%;
+    #hero-section {
+        background-position: 75%;        
     }
 
     #hero-section h1 {
@@ -257,16 +253,15 @@ nav {
 
 @media only screen and (max-width: 380px) {
 
-    #hero-section::after {
-        opacity: 1;
-        background-position: 75%;
+    #hero-section {
+        background-position: 75%;        
     }
 
     #hero-section h1 {
         font-size: 2.75em;
         font-weight: 800;
         margin: 0;
-        padding-top: 1.7em;
+        padding-top: 2em;
     }
     #hero-section p {
         width: 90%;
