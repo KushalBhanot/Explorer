@@ -1,0 +1,152 @@
+<%- include("partials/header") %>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/home">
+        E.
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/ideas">Ideas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/books">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/clubs">Clubs & Societies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/wof">Wall of Fame</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section id="ideas-section">
+    <div class="container">
+        <% if(error && error.length > 0) { %>
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h5><%= error %></h5>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0) { %>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h5><%= success %></h5>
+            </div>
+        <% } %>
+    </div>
+   <div class="idea-parent-container">
+    <div class="auth-container" >
+        
+            <ul class="auth-list">
+                <h1>IDEAS</h1>
+                <% if(!currentUser) { %>
+                    
+                    <li id="loginBtn" class="ml-auto" id="auth-out">
+                        <a href="/login" class="nav-link"><button class="btn btn-lg btn-dark idea-submit-btn">Login/Submit</button></a>
+                    </li>
+                   
+                    <% } else { %>
+                        
+                        <li id="loginBtn" class="ml-auto" id="auth-in" style="display: flex;border-bottom: none;">
+                            <a href="#" class="nav-link disable" ><button class="btn btn-lg badge badge-pill badge-dark" style="display: flex;justify-content:space-between;align-items: center;"><img src="<%= currentUser.image %>" class="image-fluid rounded-circle user-img"><%= currentUser.name %><i class="fas fa-angle-down"></i> </button></a>
+                        </li>
+                    </ul>
+                    <ul class="auth-list">
+                        <li id="loginBtn" id="auth-out">
+                            <a href="/home/ideas/new" class="nav-link"><button class="btn btn-lg btn-dark idea-submit-btn">Submitss</button></a>
+                        </li>
+                        <li id="loginBtn" class="ml-auto" id="auth-out" style="border : none;">
+                            <a href="/logout" class="nav-link"><button class="btn btn-lg btn-dark idea-submit-btn">Logout</button></a>
+                        </li>
+                    </ul>
+                
+                    <% } %>
+                
+                
+    </div>
+
+    <form action="/home/ideas" method="GET">
+        <div class="form-group">
+            <input type="text" name="search" placeholder="Search Ideas..." class="form-control">
+            <input type="submit" value="&#xf002;" class="search">
+        </div>
+    </form>
+
+    <div class="show" style="display: flex;flex-direction:column;justify-content: center;align-items: center;">
+        <div class="col-md-6" id="noMatch">
+            <% if(noMatch !== null) { %>
+               <img src="/assets/images/noMatch.png" class="noMatchImg" alt=" <%= noMatch %>" >
+            <% } %>
+        </div>
+        <% ideas.forEach(function(idea){ %>
+         
+         
+            <%var tags = idea.tech.split(",") %>
+            <div class="card mt-4 mb-4 ml-4 mr-4" id="idea-card" style="text-align:left;" data-aos="fade-up" data-aos-duration="800">
+                <div class="card-container" style="display: flex;">
+                    <div class="card-body" style="display: flex;">
+                        <span class="badge badge-pill badge-secondary p-2" style="display: flex;flex-direction: column;justify-content: space-between;"><i class="fas fa-angle-double-up"></i> <p><%= idea.likes.length %></p><i class="fas fa-angle-double-down"></i></span>
+                    </div>
+                    
+                    <div class="card-body">
+                    <p class="card-text"><%= idea.author.name %>, <%= idea.createdAt.toDateString() %></p>
+                    <h4 class="card-title"><%= idea.title %></h4>
+                    <p class="card-text"><%= idea.body.substring(0,200) %> ...</p>
+                    <p class="card-text">
+                        <% tags.forEach(function(tag){ %>
+                        <span class="badge badge-pill badge-primary"><%= tag %></span>
+                        <% }) %>
+                    </p>
+                    <a href="/home/ideas/<%= idea._id %>" ><i class="far fa-comment-dots" style="font-size:1.2rem;">&nbsp;See More</i> </a>
+
+                    </div>
+                </div>
+                
+            </div>
+        <% }) %> 
+    </div>
+</div>
+
+
+
+
+
+<section id="credit">
+    <div class="container-fluid">
+        <div id="socials">
+            <a target="_blank" href="https://github.com/KushalBhanot/Explorer"><i
+                    class="fab fa-github fa-3x white-icons"></i></a>
+        </div>
+
+        <p>Made with &hearts; by
+            <a target="_blank" href="https://www.github.com/KushalBhanot">Kushal Bhanot</a> and <a target="_blank"
+                href="https://github.com/Divyanshwick">Divyansh Kumar</a> </p>
+
+        <p>All rights reserved.</p>
+    </div>
+</section>
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+<script src="/assets/js/particle.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+<script>AOS.init();</script>
+</body>
+
+</html>

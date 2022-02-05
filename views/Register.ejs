@@ -1,0 +1,108 @@
+<%- include("partials/header") %>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/home">
+        E.
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/ideas">Ideas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/books">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/clubs">Clubs & Societies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/wof">Wall of Fame</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <% if(error && error.length > 0) { %>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h5><%= error %></h5>
+        </div>
+    <% } %>
+    <% if(success && success.length > 0) { %>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h5><%= success %></h5>
+        </div>
+    <% } %>
+</div>
+<section class="contact">
+    <div class="Box">
+        <div class="fBox">
+            <form action="/register" method="POST">
+            
+                <legend><h2>Sign Up</h2></legend>
+               
+                <div class="iBox">
+                    <input type="text" name="name" required="required">
+                    <span>Username : </span>
+                </div>
+                <div class="iBox">
+                    <input type="email" name="username" required="required">
+                    <span>Email : </span>
+                </div>
+                <div class="iBox">
+                    <input type="password" name="password" required="required">
+                    <span>Password : </span>
+                </div>
+                <div class="iBox">
+                    <input type="text" name="userImage" required="required">
+                    <span>Add Link of your Image: </span>
+                </div>
+                <div class="iBox">
+                    <input type="submit" value="Sign Up">
+                </div>
+            
+            </form>
+        </div>
+      <!-- <div class="SignUpImgBx" data-aos="fade-left" data-aos-duration="800">
+      </div> -->
+     
+       
+        <div class="gAuth">
+          <a class="btn" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            <p>SignUp with Google</p>
+          </a>
+          <a class="btn" style="background : #333333;" href="/auth/github" role="button">
+            <i class="fab fa-github"></i>
+            <p>SignUp with Github</p>
+          </a>
+          <!-- <a class="btn" style="background : #0e76a8;" href="/auth/facebook" role="button">
+            <i class="fab fa-facebook"></i>
+            <p>SignUp with Facebook</p>
+          </a> -->
+       </div>
+     
+    
+    
+</div>
+
+
+</section>
+
+
+
+<%- include("partials/footer") %>

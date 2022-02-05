@@ -1,0 +1,67 @@
+<%- include("partials/header") %>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/home">
+        E.
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/ideas">Ideas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/books">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/clubs">Clubs & Societies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/wof">Wall of Fame</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section id="resources">
+    <div class="container-fluid" data-aos="fade-in" data-aos-duration="800">
+        <p>Community is made by all of us. And the best way to give back to the community is by sharing.<br>
+            If you have any notes that you would like to share with the developer communtiy, then click on the
+            button below!<br>
+            <a href="mailto:developerkushalb@gmail.com?subject=Notes for Explorer"><button
+                    class="btn btn-lg resources-btn">I'm up for the
+                    contribution!</button></a>
+        </p>
+
+        <h3>Notes</h3>
+        <ul>
+            <li><a href="">Introduction to Web Technologies</a></li>
+            <li><a href="">Java</a></li>
+        </ul>
+
+        <h3>Recommended Courses</h3>
+        <ul>
+            <li><a href="">Neural Network and Deep Leaning</a></li>
+            <li><a href="">Web Development Bootcamp</a></li>
+        </ul>
+
+        <h3>GitHub repos you should know about</h3>
+        <ul>
+            <li><a href="https://github.com/ForrestKnight/open-source-cs">open-source-cs</a></li>
+            <li><a href="https://github.com/poteto/hiring-without-whiteboards">hiring-without-whiteboards</a></li>
+        </ul>
+    </div>
+</section>
+    <%- include("partials/footer") %>

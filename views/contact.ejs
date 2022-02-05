@@ -1,0 +1,72 @@
+<%- include("partials/header") %>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/home">
+        E.
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/ideas">Ideas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/books">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/clubs">Clubs & Societies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/wof">Wall of Fame</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="contact">
+    <div class="Box">
+        <div class="fBox">
+            <form action="/home" method="POST" data-aos="fade-right" data-aos-duration="800">
+            
+                <legend><h2>Contact Us</h2></legend>
+                <div class="iBox">
+                    <input type="text" name="message[name]" pattern="[A-Za-z]+" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="iBox">
+                    <input type="email" name="message[email]" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="iBox">
+                    <textarea required="required" name="message[body]"  pattern=".{,400}"></textarea>
+                    <span>Type your Message Here...</span>
+                </div>
+                <div class="iBox">
+                    <input type="submit" value="Send">
+                </div>
+            
+            </form>
+        </div>
+      <div class="ContactImgBx" data-aos="fade-left" data-aos-duration="800">
+      </div>
+    
+</div>
+
+
+</section>
+
+
+
+
+<%- include("partials/footer") %>

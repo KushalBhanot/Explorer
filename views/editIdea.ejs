@@ -1,0 +1,86 @@
+<%- include("partials/header") %>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/home">
+        E.
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/ideas">Ideas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/books">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/clubs">Clubs & Societies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/wof">Wall of Fame</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-4" href="/home/contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <% if(error && error.length > 0) { %>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h5><%= error %></h5>
+        </div>
+    <% } %>
+    <% if(success && success.length > 0) { %>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h5><%= success %></h5>
+        </div>
+    <% } %>
+</div>
+<section class="contact">
+    <div class="Box">
+        <div class="fBox">
+            <form action="/home/ideas/<%= idea._id %>?_method=PUT" method="POST">
+            
+                <h2>Edit Idea <br>"<%= idea.title %>" </h2>
+                <div class="iBox">
+                    <input type="text" name="blog[title]" value="<%= idea.title %>" required="required">
+                    <span>Title : </span>
+                </div>
+                <div class="iBox">
+                    <textarea name="blog[body]" required="required"><%= idea.body %></textarea>
+                    <span>Idea Desc : </span>
+                </div>
+                <div class="iBox">
+                    <textarea required="required" name="blog[tech]"><%= idea.tech %></textarea>
+                    <span>Tech Used :</span>
+                </div>
+                <div class="iBox">
+                    <input type="submit" value="Update">
+                </div>
+            
+            </form>
+        </div>
+        <div class="UpdImgBx" data-aos="fade-left" data-aos-duration="800">
+        </div>
+    
+</div>
+
+
+</section>
+
+
+
+
+<%- include("partials/footer") %>

@@ -1,4 +1,3 @@
-
 # Explorer
 
 **Production:** https://explorer-kd.herokuapp.com/
