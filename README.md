@@ -1,6 +1,6 @@
 # Explorer
 
-**Production:** https://explorer-kd.herokuapp.com/
+**Live demo:** https://explorer-chi.vercel.app/
 
 **Develop:**
 https://explorer-chi.vercel.app/
